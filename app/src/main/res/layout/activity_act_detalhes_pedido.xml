@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_act_detalhes_pedido"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+    tools:context="com.example.vitalate.engenhariasoftware.actDetalhesPedido">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:text="Detalhes do pedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView34"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"/>
+
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+
+        <TextView
+            android:text="Nome:"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView35"
+            android:layout_alignBaseline="@+id/edtNomeDet"
+            android:layout_alignBottom="@+id/edtNomeDet"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textAlignment="center"
+            android:id="@+id/edtNomeDet"
+            android:enabled="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:text="Preço:"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtNomeDet"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView36"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtPrecoDet"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:layout_alignBaseline="@+id/textView36"
+            android:layout_alignBottom="@+id/textView36"
+            android:layout_toEndOf="@+id/textView37"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:text="Observações:"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView37"
+            android:layout_alignBaseline="@+id/edtObservacaoDet"
+            android:layout_alignBottom="@+id/edtObservacaoDet"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtObservacaoDet"
+            android:layout_below="@+id/edtPrecoDet"
+            android:layout_toEndOf="@+id/btnEditarPedido"
+            android:enabled="false"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Data do pedido:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView38"
+        android:layout_below="@+id/edtObservacaoDet"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4">
+
+            <EditText
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edt_detPedDiaIni"
+                android:hint="Dia"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edt_detPedMesIni"
+                android:hint="Mês"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView38"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edt_detPedAnoIni"
+                android:hint="Ano"
+                android:textAlignment="center"
+                android:layout_width="91dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/edt_detPedMesIni"
+                android:enabled="false"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+            <TextView
+        android:text="Data limite:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_detPedDiaIni"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView39" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/linearLayout6">
+
+        <EditText
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edt_detPedDiaLim"
+            android:hint="Dia"
+            android:textAlignment="center"
+            android:layout_alignParentStart="true"
+            android:enabled="false" />
+
+        <EditText
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:id="@+id/edt_detPedMesLim"
+            android:hint="Mês"
+            android:textAlignment="center"
+            android:enabled="false" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_alignParentStart="true"
+            android:id="@+id/edt_detPedAnoLim"
+            android:hint="Ano"
+            android:textAlignment="center"
+            android:layout_width="91dp"
+            android:enabled="false" />
+    </LinearLayout>
+
+            <TextView
+        android:text="Data do pagamento:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEditarPedido"
+        android:id="@+id/textView43" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5">
+
+            <EditText
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edt_detPedDiaFin"
+                android:hint="Dia"
+                android:textAlignment="center"
+                android:layout_alignBaseline="@+id/textView43"
+                android:layout_alignBottom="@+id/textView43"
+                android:layout_toEndOf="@+id/textView43"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edt_detPedMesFin"
+                android:hint="Mês"
+                android:textAlignment="center"
+                android:layout_alignBaseline="@+id/edt_detPedAnoFin"
+                android:layout_alignBottom="@+id/edt_detPedAnoFin"
+                android:layout_toStartOf="@+id/edt_detPedAnoFin"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edt_detPedAnoFin"
+                android:hint="Ano"
+                android:textAlignment="center"
+                android:layout_width="91dp"
+                android:layout_alignBaseline="@+id/textView43"
+                android:layout_alignBottom="@+id/textView43"
+                android:layout_toEndOf="@+id/edtPrecoDet"
+                android:enabled="false"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+            <Button
+        android:text="Editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEditarPedido"
+        android:layout_alignParentBottom="true"
+        android:onClick="editarPedidoClicked" />
+
+    <Button
+        android:text="Finalizar Edição"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFinalizarEdicao"
+        android:onClick="finalizarEdicaoClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Finalizar Pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFinalizarPedido"
+        android:onClick="finalizarClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnFinalizarEdicao" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

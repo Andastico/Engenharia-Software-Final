@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vitalate.engenhariasoftware.ActPrincipal"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/logoclids"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="center_horizontal"/>
+
+                <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_prinBtnCadCli"
+                android:id="@+id/btnCadCli"
+                android:onClick="cadCliClicked"
+                android:textColor="#6a80e0"
+                android:textSize="40px"
+                android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONSULTAR CLIENTES"
+                    android:id="@+id/button3"
+                    android:onClick="consultarCliClicked"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cadastrar pedido"
+                    android:id="@+id/button4"
+                    android:onClick="rodarPedido"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:text="Consultar pedidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button5"
+                    android:onClick="rodarConsultaPedido"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:text="PEDIDOS ATRASADOS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button8"
+                    android:onClick="rodarAtrasados"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:text="LInha do tempo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button6"
+                    android:onClick="rodarTimeLine"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:text="LISTA NEGRA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button7"
+                    android:onClick="rodarConsultaBlacklist"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:text="INFORMAÇÕES"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnChamarEstatisticas"
+                    android:onClick="informacoesClicked"
+                    android:textColor="#6a80e0"
+                    android:textSize="40px"
+                    android:textStyle="bold"/><![CDATA[
+
+
+
+                />
+
+
+            ]]>
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

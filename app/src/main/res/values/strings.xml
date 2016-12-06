@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Clids</string>
+    <string name="txt_prinApresentacao">Nome do app</string>
+    <string name="txt_prinBtnCadCli">Cadastrar cliente</string>
+    <string name="title_activity_act_cad_cli">actCadCli</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_cadCliApresentacao">Cadastro de Cliente</string>
+    <string name="txt_cadCliNome">Nome</string>
+    <string name="txt_cadCliDataNasc">Data de nascimento</string>
+    <string name="txt_cadCliSexo">Sexo</string>
+    <string name="txt_cadCliRdbFem">Feminino</string>
+    <string name="txt_cadCliRdbMasc">Masculino</string>
+    <string name="txt_cadCliEnderecos">Endereços</string>
+    <string name="txt_cadCliEditar">Editar</string>
+    <string name="txt_editEndRemover">Remover selecionado</string>
+    <string name="txt_editEndRua">Rua</string>
+    <string name="txt_editEndNumero">Numero</string>
+    <string name="txt_editEndBairro">Bairro</string>
+    <string name="txt_editEndComplemento">Complemento</string>
+    <string name="txt_editEndSalvar">Salvar</string>
+    <string name="txt_editEndRetornar">Retornar</string>
+    <string name="txt_cadCliEditTel">Editar</string>
+    <string name="txt_cadCliAprenTel">Telefones</string>
+    <string name="txt_editTelRemover">Remover</string>
+    <string name="txt_editTelNumero">Numero</string>
+    <string name="txt_editTelTipo">Tipo</string>
+    <string name="txt_editTelSalvar">Salvar</string>
+    <string name="txt_editTelRetornar">Retornar</string>
+    <string name="txt_cadCliCadastrar">Cadastrar</string>
+</resources>

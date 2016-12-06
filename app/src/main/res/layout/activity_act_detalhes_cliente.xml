@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.vitalate.engenhariasoftware.actDetalhesCliente">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"><![CDATA[>
+
+            ]]>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="{{NOME}}"
+                android:id="@+id/txt_nomeCliente"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="{{ANIVERSARIO}}"
+                android:id="@+id/txt_aniversarioCliente"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="{{SEXO}}"
+                android:id="@+id/txt_sexoCliente"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Telefones (Segure para ligar)"
+                android:id="@+id/lbl_telefones"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/lst_detCliTelefones"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Endereços"
+                android:id="@+id/lbl_enderecos"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lst_detCliEndereco"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="{{estatisticas}}"
+                android:id="@+id/lbl_detCliEstatisticas"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="Retirar da lista negra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_tirarBlacklist"
+                android:background="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"
+                android:onClick="tirarBlacklistClicked"/>
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/editaricon"
+                android:layout_gravity="right"
+                android:onClick="editarClicked"/>
+
+            <Button
+                android:text="Pedidos do Mês"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button9"
+                android:onClick="pedidosMesClicked" />
+
+            <Button
+                android:text="Todos os Pedidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                android:onClick="todosPedidosClicked" />
+
+        </LinearLayout>
+
+
+
+                Layout>
+    </ScrollView>
+
+
+</LinearLayout>

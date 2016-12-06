@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vitalate.engenhariasoftware">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoclids"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActPrincipal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".actCadCliente" />
+        <activity android:name=".actEditEndereco" />
+        <activity android:name=".actEditTelefone" />
+        <activity android:name=".actConsultaClientes" />
+        <activity android:name=".actCadPedido" />
+        <activity android:name=".actDetalhesCliente" />
+        <activity android:name=".actConsultaPedido" />
+        <activity android:name=".actDetalhesPedido" />
+        <activity android:name=".actTimeLine" />
+        <activity android:name=".actConsultaBlacklist" />
+        <activity android:name=".actAtrasados" />
+        <activity android:name=".actDetalhesAtrasados" />
+        <activity android:name=".actEstatisticasUsuario" />
+        <activity android:name=".actDetalhesPedidosMes" />
+        <activity android:name=".actTodosPedidos"></activity>
+    </application>
+
+</manifest>
