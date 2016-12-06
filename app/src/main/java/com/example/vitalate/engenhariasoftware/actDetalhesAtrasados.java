@@ -96,7 +96,6 @@ public class actDetalhesAtrasados extends AppCompatActivity {
             {
                 db.adicionarBlacklist(pedido.getCodCliente());
                 db.deleteAtraso(pedido.getId());
-                enviarBlackList.setEnabled(false);
                 mostrarToast("Este cliente foi enviado para Lista negra");
             }
             else

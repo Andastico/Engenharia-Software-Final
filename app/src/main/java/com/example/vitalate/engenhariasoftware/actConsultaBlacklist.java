@@ -96,7 +96,7 @@ public class actConsultaBlacklist extends AppCompatActivity {
 		if(clientesBlc == null||clientesBlc.isEmpty()  )
 		{
 			listaClientesBlc.setVisibility(View.INVISIBLE);
-			mostrarToast("Nenhum cliente encontrado na blacklist");
+			mostrarToast("Nenhum cliente encontrado na Lista negra");
 		}
 		else
 		{
